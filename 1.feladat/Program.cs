@@ -10,9 +10,12 @@ namespace _1.feladat
     {
         static void Main(string[] args)
         {
+            int HanyElem;
+            Console.WriteLine("Kérem adjan meg hogy hany darab számot szeretne megadni");
+            HanyElem = Convert.ToInt32(Console.ReadLine());
+            int[] tomb = new int[HanyElem];
 
-            int[] tomb = new int[10];
-            Console.WriteLine("Kérem adjon meg 10 db számot");
+            Console.WriteLine("Kérem adjon meg {0} db számot",HanyElem);
             
 
             for (int i = 0; i < tomb.Length; i++)
