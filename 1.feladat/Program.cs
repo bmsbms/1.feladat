@@ -24,16 +24,24 @@ namespace _1.feladat
             }
 
             int legnagyobb=tomb[0];
+            int legkisebb = tomb[0];
+
             for (int i = 0; i < tomb.Length; i++)
             {
                 if (legnagyobb < tomb[i])
                 {
                     legnagyobb = tomb[i];
                 }
+
+                if (legkisebb> tomb[i])
+                {
+                    legkisebb = tomb[i];
+                }
+
             }
 
 
-            Console.WriteLine("A legnagyobb szám a bekért adatok közül: {0}",legnagyobb);
+            Console.WriteLine("A legnagyobb szám a bekért adatok közül: {0} a legkisebb pedig {1}",legnagyobb,legkisebb);
 
             Console.ReadKey();
 
